@@ -1,0 +1,13 @@
+Tarjetas de credito (Frontend mentor):
+
+Estilos al active input.
+Separar los inputs del final.
+Arreglar sec-1 imagenes.
+
+
+Haciendo:
+Validaciones? con mensajes de errores (Colores en Style-guide).
+
+
+Hecho:
+Estilos al placeholder del input.

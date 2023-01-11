@@ -1,0 +1,138 @@
+:root {
+  --LinearGradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --Red: hsl(0, 100%, 66%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrayishViolet: hsl(270, 3%, 87%);
+  --DarkGrayishViolet: hsl(279, 6%, 55%);
+  --VeryDarkViolet: hsl(278, 68%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.container {
+  width: 375px;
+  margin: 0 auto;
+}
+
+.sec-1 {
+  background-image: url("./images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+}
+
+.card-back {
+  background-image: url("./images/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 150px;
+  position: absolute;
+  left: 30%;
+  top: 12%;
+}
+
+.card-front {
+  background-image: url("./images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 150px;
+  position: absolute;
+  top: 43%;
+  left: 1rem;
+  color: var(--White);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-img {
+  height: 45%;
+}
+
+.user-card-data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2rem 2rem 2rem;
+  text-transform: uppercase;
+}
+
+.card-form label {
+  font-family: "Space Grotesk", serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 10px;
+  margin-top: 24px;
+}
+
+.card-form input {
+  border-radius: 8px;
+  border: 1px solid var(--LightGrayishViolet);
+  padding: 0.8rem;
+  margin: 0.3rem 0;
+}
+
+.card-form input::placeholder {
+  font-family: "Space Grotesk", serif;
+  font-weight: 500;
+  font-size: larger;
+  color: var(--LightGrayishViolet);
+}
+
+.card-form button {
+  font-family: inherit;
+  letter-spacing: 1px;
+  background-color: var(--VeryDarkViolet);
+  color: var(--White);
+  border-radius: 8px;
+  padding: 0.8rem;
+}
+
+.date-cvc {
+  display: flex;
+  justify-content: center;
+}
+
+.exp-date {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.exp-date input {
+  width: 48%;
+}
+
+.cvc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.error {
+  color: red;
+  font-family: sans-serif;
+  text-transform: none;
+  font-size: 12px;
+}

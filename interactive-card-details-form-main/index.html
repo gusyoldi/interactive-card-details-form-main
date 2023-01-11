@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONTS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive card details form</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="sec-1">
+        <div class="card-back"></div>
+        <div class="card-front">
+          <div class="user-img">O</div>
+          <div class="card-number">0000 0000 0000 0000</div>
+          <div class="user-card-data">
+            <div class="card-name">Jane Appleseed</div>
+            <div class="card-exp">00/00</div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-2">
+        <form class="card-form" action="#">
+          <div class="name-error">
+          <label for="card-name">Cardholder Name</label>
+          <input
+            id="card-name"
+            name="card-name"
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+          />
+        </div>
+          
+
+          <label for="card-number">Card Number</label>
+          <input
+            name="card-number"
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+          <div class="date-cvc">
+            <div class="exp-date">
+              <label for="exp-date"> Exp. Date (MM/YY)</label>
+              <input type="text" name="exp-date" placeholder="MM" />
+              <input type="text" name="exp-date" placeholder="YY" />
+            </div>
+            <div class="cvc">
+              <label for="cvc">CVC</label>
+              <input type="text" name="cvc" placeholder="e.g. 123" />
+            </div>
+          </div>
+          <button type="submit">Confirm</button>
+        </form>
+      </div>
+      <!-- 0000 0000 0000 0000 Jane Appleseed 00/00  -->
+      <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Gustavo Yoldi</a>.
+    </div> -->
+    </main>
+    <script src="./validations.js"></script>
+  </body>
+</html>
